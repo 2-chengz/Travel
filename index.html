@@ -1,182 +1,128 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <title>Shared Travel Itineraries</title>
   <meta charset="utf-8">
-
-  <title>Aeroponic/Agroponics Site</title>
-
-  <!-- Firebase CDN -->
-  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Bootstrap JS -->
-  <link rel="stylesheet" href="topnav/topnav.css">
-  <link rel="stylesheet" href="maincontent/maincontent.css">
-  <link rel="stylesheet" href="carousel/carousel.css">
-  <!-- jQuery -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <!-- js -->
-  <script src="app.js"></script>
-  <script src="topnav/topnav.js"></script>
-  <script src="carousel/carousel.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="front_page/front_page.js"></script>
+    <link rel="stylesheet" href="front_page/front_page.css">
 </head>
-
-<!-- code for responsive top nav -->
 <body>
-  <div class="mainpagecontent">
-    <div class="topnav" id="myTopnav">
-      <a href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-
-<!-- code for front page content carousel -->
-
-<div class="fb-carousel">
-  <div class="fpitem active" id="fp1">
-    <img class="fp" src="images/puppy1.jpg">
-    <div class="text">Caption Text</div>
+  <!-- Top Nav -->
+  <div class="topnav" id="myTopnav">
+    <a href="#home">Home</a>
+    <a href="#news">Itineraries</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
   </div>
 
-  <div class="fpitem hidden" id="fp2">
-    <img class="fp" src="images/puppy2.jpg">
-    <div class="text">Caption Two</div>
-  </div>
+  <div class="container">
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li class="item1 active"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+      </ol>
 
-  <div class="fpitem hidden" id="fp3">
-    <img class="fp" src="images/puppy3.jpg">
-    <div class="text">Caption Three</div>
-  </div>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
 
-  <div class="fpitem hidden" id="fp4">
-    <img class="fp" src="images/puppy4.jpg">
-    <div class="text">Caption Four</div>
-  </div>
-</div>
-<br>
+        <div class="item active">
+          <img class "fp" src="images/pv1.jpg">
+          <div class="carousel-caption">
+            <h3>Puerto Vallarta</h3>
+            <p>7 Days Trip in Paradise!</p>
+          </div>
+        </div>
 
-  <div>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      sample content1
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      sample content2
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      sample content3
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      sample content4
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      sample content5
-      <br>
-      sample content6
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      sample content7
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      sample content8
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      sample content9
-      <br>
-      sample content10
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      sample content11
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      sample content12
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      content
-      <br>
-      sample content13
-      <br>
+        <div class="item">
+          <img class "fp" src="images/pv2.jpg">
+          <div class="carousel-caption">
+            <h3>Puerto Vallarta</h3>
+            <p>4 Day Journey for Foodies!</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class "fp" src="images/pv3.jpg">
+          <div class="carousel-caption">
+            <h3>Flowers</h3>
+            <p>Beautiful flowers in Kolymbari, Crete.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class "fp" src="images/pv4.jpg">
+          <div class="carousel-caption">
+            <h3>Flowers</h3>
+            <p>Beautiful flowers in Kolymbari, Crete.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myTopnav" role="button">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myTopnav" role="button">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
-</body>
+
+  <!-- FP Content -->
+  <div class="front_page_content">
+    <div class="article">
+      <img class="article_image" src="images/pv1.jpg">
+      <div class="article_text">
+        Article 1
+        Article 1
+        Article 1
+        Article 1
+        Article 1
+      </div>
+    </div>
+    <div class="article">
+      <img class="article_image" src="images/pv2.jpg">
+      <div class="article_text">
+        Article 2
+        Article 2
+        Article 2
+        Article 2
+        Article 2
+      </div>
+    </div>
+    <div class="article">
+      <img class="article_image" src="images/pv3.jpg">
+      <div class="article_text">
+        Article 3
+        Article 3
+        Article 3
+        Article 3
+        Article 3
+      </div>
+    </div>
+    <div class="article">
+      <img class="article_image" src="images/pv4.jpg">
+      <div class="article_text">
+        Article 4
+        Article 4
+        Article 4
+        Article 4
+        Article 4
+      </div>
+    </div>
+
+  </div>
+
 
 </body>
+</html>
