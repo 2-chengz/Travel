@@ -1,14 +1,17 @@
-.topnav {
+body {
+  background-color: #FFFFFF;
+}
+
+.botnav {
     background-color: #FFFFFF;;
     overflow: hidden;
     position: fixed;
-    top: 0;
+    bottom: 0;
     width: 100%;
     z-index: 2;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+.botnav a {
     float: left;
     display: block;
     color: #6F7C80;
@@ -18,21 +21,14 @@
     font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
+.botnav a:hover {
     background-color: #ddd;
     color: #373D3F;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
+  .botnav a:not(:first-child) {display: none;}
+  .botnav a.icon {
     float: right;
     display: block;
   }
@@ -40,15 +36,38 @@
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
+  .botnav.responsive {position: relative;}
+  .botnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  .botnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
+}
+
+.articletitle {
+  top: 52px;
+  position: relative;
+  color: #6F7C80;
+}
+
+.title{
+  display: inline;
+  margin-left: 10px;
+}
+
+#test {
+  background-color: #8FBC8F;
+  height: 800px;
+  position: relative;
+  top: 52px;
+}
+
+#activebutton {
+  background-color: #ddd;
+  color: #373D3F;
 }
