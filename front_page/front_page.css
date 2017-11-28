@@ -4,6 +4,7 @@ body {
   background-position: right;
   background-size: 20%;
   background-attachment: fixed;
+  font-family: 'Lato', sans-serif;
 }
 
 /*carousel */
@@ -43,6 +44,7 @@ body {
 .carousel-control.left, .carousel-control.right {
   background-image: none;
   z-index: 4;
+  color: #D3D3D3;
 }
 
 /* front page content */

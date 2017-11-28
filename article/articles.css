@@ -1,6 +1,11 @@
+/*body styling */
+
 body {
   background-color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
 }
+
+/*sub nav styles */
 
 .botnav {
     background-color: #FFFFFF;
@@ -50,6 +55,17 @@ body {
   }
 }
 
+#activebutton {
+  background-color: #ddd;
+  color: #373D3F;
+}
+
+.icon{
+  height: 100px;
+}
+
+/* article styles */
+
 .articletitle {
   top: 52px;
   height: 52px;
@@ -75,11 +91,10 @@ body {
   top: 256px;
 }
 
-#activebutton {
-  background-color: #ddd;
-  color: #373D3F;
-}
-
-.icon{
-  height: 100px;
+#articlesubcontent{
+    color: #6F7C80;
+    width: 800px;
+    position: relative;
+    top: 256px;
+    left: 25px;
 }
