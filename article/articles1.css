@@ -18,7 +18,7 @@ h5 {
     background-color: #FFFFFF;
     overflow: hidden;
     position: fixed;
-    top: 87px;
+    top: 92px;
     width: 170px;
     height: 100%;
     z-index: 2;
@@ -110,7 +110,7 @@ h5 {
 
 .articletitle {
   top: 52px;
-  height: 35px;
+  height: 40px;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -136,8 +136,33 @@ h5 {
 
 #articlesubcontent{
     color: #6F7C80;
-    width: 800px;
+    width: 80%;
     position: relative;
-    top: 87px;
+    top: 92px;
     left: 175px;
+}
+
+.contentimage {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+.smallcontentimage{
+  width: 20%;
+  height: auto;
+}
+
+.articletopimages{
+  width: 80%;
+  height: auto;
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+  text-align: center;
+}
+
+#articlesubcontent a{
+  color: #00008B;
+  text-decoration: underline;
 }
