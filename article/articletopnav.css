@@ -5,6 +5,14 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+h3 {
+  display: inline-block;
+  margin-top: 0;
+}
+
+h5 {
+  display: inline-block;
+}
 /*sub nav styles */
 
 .botnav {
@@ -90,6 +98,18 @@ instead of horizontally) */
   margin-left: 10px;
 }
 
+.articlecontentcontainer{
+  top: 226px;
+  position: relative;
+  display: inline-block;
+  bottom: 200px;
+}
+
+.commentblock{
+  height: 230px;
+  display: block;
+}
+
 #test {
   background-color: #8FBC8F;
   height: 1800px;
@@ -97,10 +117,51 @@ instead of horizontally) */
   top: 256px;
 }
 
+#disqus_thread {
+  height: 400px;
+  position: relative;
+  bottom: 0px;
+  display: block;
+  width: 98%;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 #articlesubcontent{
     color: #6F7C80;
-    width: 800px;
+    width: 90%;
     position: relative;
-    top: 256px;
-    left: 25px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 10px;
+}
+
+.contentimage {
+  display: block;
+  width: 55%;
+  height: auto;
+  margin-left: 15px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.smallcontentimage{
+  width: 20%;
+  height: auto;
+}
+
+.articletopimages{
+  width: 80%;
+  height: auto;
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+  text-align: center;
+}
+
+#articlesubcontent a{
+  color: #00008B;
+  text-decoration: underline;
 }
