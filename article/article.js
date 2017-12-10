@@ -27,12 +27,12 @@ $(document).ready(function(){
     $(".active.articlecontent").removeClass("active").addClass("hidden")
     $(".articlecontent.getaroundcontent").removeClass("hidden").addClass("active")
   })
-  $(".See").on("click", function(){
+  $(".Pack").on("click", function(){
     //console.log("clicked see")
     $("#activebutton").removeAttr("id");
-    $(".See").attr("id", "activebutton")
+    $(".Pack").attr("id", "activebutton")
     $(".active.articlecontent").removeClass("active").addClass("hidden")
-    $(".articlecontent.seecontent").removeClass("hidden").addClass("active")
+    $(".articlecontent.packcontent").removeClass("hidden").addClass("active")
   })
   $(".Do").on("click", function(){
     //console.log("clicked do")
@@ -42,3 +42,10 @@ $(document).ready(function(){
     $(".articlecontent.docontent").removeClass("hidden").addClass("active")
   })
 });
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://nextperfecttrip.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
