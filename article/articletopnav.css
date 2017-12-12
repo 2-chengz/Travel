@@ -122,7 +122,7 @@ instead of horizontally) */
   position: relative;
   bottom: 0px;
   display: block;
-  width: 98%;
+  width: 80%;
   text-align: center;
   margin-left:auto;
   margin-right:auto;
@@ -135,6 +135,7 @@ instead of horizontally) */
     margin-left:auto;
     margin-right:auto;
     padding: 10px;
+    align-items: center;
 }
 
 .contentimage {
